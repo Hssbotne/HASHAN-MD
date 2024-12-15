@@ -9,11 +9,11 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
+    
+await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/fbebro.jpeg`},caption: `Hello ${pushname}, hello iam created by Hashan Sathsara🌝❤️‍🔥 ! This Bot Created Dark Hackers Ofc team members !`},{quoted: mek})
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
 }
 })
-
-
