@@ -23,7 +23,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = search.videos[0];
         const url = data.url;
 
-        let desc = `*💚🎵 𝐘𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 🎵💚*
+        let desc = `*💚🎵 HASHAN-MD 🎵💚*
       
 > *\`➤ Title\` :* ${data.title}
 
@@ -38,7 +38,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 1. Audio 
 2. Document
 
-> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©𝐌𝐑 𝐃𝐈𝐍𝐄𝐒𝐇 𝐎𝐅𝐂 💚*
+> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©MR HASHIYA CODER X 💚*
         `;
 
         const vv = await conn.sendMessage(from, { image: { url: data.thumbnail }, caption: desc }, { quoted: mek });
@@ -61,7 +61,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                         await conn.sendMessage(from, { 
                             audio: { url: audioDownloadUrl }, 
                             mimetype: "audio/mpeg", 
-                            caption: "> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©𝐌𝐑 𝐃𝐈𝐍𝐄𝐒𝐇 𝐎𝐅𝐂 💚*" 
+                            caption: "> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©HASHAN-MD 💚*" 
                         }, { quoted: mek });
                         break;
        
@@ -76,7 +76,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                             document: { url: docDownloadUrl },
                             mimetype: "audio/mpeg", 
                             fileName: `${data.title}.mp3`, 
-                            caption: "> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©𝐌𝐑 𝐃𝐈𝐍𝐄𝐒𝐇 𝐎𝐅𝐂 💚*" 
+                            caption: "> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©HASHAN-MD 💚*" 
                         }, { quoted: mek });
                         break;
  
