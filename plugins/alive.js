@@ -7,27 +7,27 @@ cmd({
     alias: ["status", "runtime", "uptime"],
     desc: "Check uptime and system status",
     category: "main",
-    react: "📟",
+    react: "👋",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = `╭━━〔 *QUEEN SADU-MD* 〕━━┈⊷
+        const status = `╭━━〔 *HASHAN-MD* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 ┃◈┃• *⚙️ HostName*: ${os.hostname()}
-┃◈┃• *👨‍💻 Owner*: ᴍʀ ᴅɪɴᴇꜱʜ
+┃◈┃• *👨‍💻 Owner*: HASHIYA BOY
 ┃◈┃• *🧬 Version*: V2 BETA
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 
-  𝐡𝐞𝐥𝐥𝐨𝐰 𝐢𝐦 𝐪𝐮𝐞𝐞𝐧 𝐬𝐚𝐝𝐮 𝐛𝐨𝐭.𝐢𝐦 𝐚𝐥𝐢𝐯𝐞 𝐧𝐨𝐰. 
+  World Best Multi Device Whatsapp bot. 
 
-  https://whatsapp.com/channel/0029Vb0Anqe9RZAcEYc2fT2c
+  https://whatsapp.com/channel/0029Vb3EOfAKGGGQAsl6wI47
 
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ᴅɪɴᴇꜱʜ`;
+> © CREATED BY HASHIYA CODER X`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
